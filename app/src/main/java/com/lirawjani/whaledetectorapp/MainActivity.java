@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             if(!curDevice.equals("None")) getValue(curDevice);
             updateDevicesList();
-            handler.postDelayed(this, 5000);  // Request every 5 seconds
+            handler.postDelayed(this, 3000);  // Request every 5 seconds
         }
     };
 
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private static final int LERP_DURATION = 3000; // Duration in milliseconds
+    private static final int LERP_DURATION = 2000; // Duration in milliseconds
     private final Handler whaleProbLerpHandler = new Handler();
     private double currentProb = 0.0;
 
